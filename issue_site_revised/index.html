@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Female Genital Mutilation: A Global Concern</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onscroll = function() {
+            shrinkHeader();
+        };
+
+        function shrinkHeader() {
+            const header = document.querySelector('header');
+            const nav = document.querySelector('nav ul');
+
+            if (window.scrollY > 50) {
+                header.classList.add('shrink');
+                nav.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+                nav.classList.remove('shrink');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Female Genital Mutilation: A Global Concern</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stories.html">More</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img src="fgm_reasons.jpeg" alt="Reasons for FGM" class="fgm-image">
+        
+        <section>
+            <h2>What is FGM?</h2>
+            <p>Female Genital Mutilation (FGM) comprises all procedures involving the removal of the external female genitalia or other injury to the female genital organs for non-medical reasons. It is most often carried out on young girls between infancy and age 15.</p>
+        </section>
+
+        <section>
+            <h2>Why is FGM a Concern?</h2>
+            <p>FGM poses severe health risks, including chronic pain, infections, complications during childbirth, and even death. The procedure is often performed in unsanitary conditions without anesthesia, leading to immediate and long-term physical consequences.</p>
+        </section>
+
+        <section>
+            <h2>Why is FGM practiced?</h2>
+            <p>Numerous factors contribute to the persistence of the practice. Yet in every society in which it occurs, FGM is an expression of deeply rooted gender inequality. Some societies see it as a rite of passage. Others use it to suppress a girl’s sexuality or ensure her chastity. FGM is not explicitly endorsed by Islam or Christianity, but religious texts are commonly deployed to justify it. Where FGM is most prevalent, communities may deem it a prerequisite for marriage or inheritance. This makes it difficult for parents to abandon the practice. Families who don’t participate face ostracism, their daughters at risk of becoming ineligible for marriage.</p>
+        </section>
+
+        <section>
+            <h2>Global Prevalence</h2>
+            <p>FGM is prevalent in many parts of Africa, the Middle East, and some regions of Asia. According to the World Health Organization, over 200 million women and girls worldwide have undergone this procedure, with a significant number in Somalia, where the practice is deeply rooted in cultural traditions.</p>
+        </section>
+
+        <div class="button-container">
+            <button onclick="location.href='about.html'">Crisis in Somalia</button>
+        </div>
+    </div><script>
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) { // Change this value to adjust when the effect occurs
+            header.classList.add('shrink');
+        } else {
+            header.classList.remove('shrink');
+        }
+    });
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) { // Change this value to adjust when the effect occurs
+            header.classList.add('shrink');
+        } else {
+            header.classList.remove('shrink');
+        }
+    });
+</script>
+
+
+</body>
+
+</html>

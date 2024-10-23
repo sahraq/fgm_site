@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - FGM Crisis in Somalia</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onscroll = function() {
+            shrinkHeader();
+        };
+
+        function shrinkHeader() {
+            const header = document.querySelector('header');
+            const nav = document.querySelector('nav ul');
+            
+            if (window.scrollY > 20) {  
+                header.classList.add('shrink');
+                nav.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+                nav.classList.remove('shrink');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Resources for Ending FGM</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stories.html">More</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <img src="end_fgm.jpeg" width="100%">
+        <h2>Organizations Working to End FGM</h2>
+        <div class="resource-grid">
+            <div class="resource-item">
+                <h3>Somali Women’s Development Organization (SWDO)</h3>
+                <p>Dedicated to improving the lives of Somali women and girls.</p>
+                <a href="https://sahiyo.org/" target="_blank"><button>Visit SWDO</button></a>
+            </div>
+            <div class="resource-item">
+                <h3>Global Fund for Women</h3>
+                <p>Advocating for women's rights globally.</p>
+                <a href="https://www.globalfundforwomen.org" target="_blank"><button>Visit GFW</button></a>
+            </div>
+            <div class="resource-item">
+                <h3>UNICEF</h3>
+                <p>Providing humanitarian and developmental aid to children worldwide.</p>
+                <a href="https://www.unicef.org" target="_blank"><button>Visit UNICEF</button></a>
+            </div>
+            <div class="resource-item">
+                <h3>World Health Organization (WHO)</h3>
+                <p>Providing leadership on global health matters.</p>
+                <a href="https://www.who.int" target="_blank"><button>Visit WHO</button></a>
+            </div>
+        </div>
+
+        <h2>Get Involved</h2>
+        <p>To help end FGM, consider donating to organizations dedicated to this cause or participating in local advocacy efforts. Raising awareness in your community can also make a significant impact.</p>
+
+        <div class="button-container">
+            <button onclick="location.href='index.html'">Back to Home</button>
+        </div>
+    </div>
+
+ <script>
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) { // Change this value to adjust when the effect occurs
+            header.classList.add('shrink');
+        } else {
+            header.classList.remove('shrink');
+        }
+    });
+</script>
+
+</body>
+</html>
